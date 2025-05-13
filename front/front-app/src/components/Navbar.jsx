@@ -14,7 +14,7 @@ export default function Navbar() {
             <img src={MKDLogo} className="h-10" alt="MKD Logo" />
             <img src={GUIDANCELogo} className="h-10" alt="GUIDANCE Logo" />
           </div>
-          <span className="bungee-regular self-center text-4xl font-bold text-blue-900">MKD - OPEN FORUM</span>
+          <span className="bungee-regular self-center text-[5vw] md:text-[2vw] font-bold text-blue-900">MKD - OPEN FORUM</span>
         </a>
         <div className="hidden md:block">
           <ul className="font-medium flex space-x-8">
@@ -28,14 +28,14 @@ export default function Navbar() {
       </div>
     </nav>
     
-    <div className="flex items-center justify-center">
-      <img src={GuidancePhoto} className="h-[20vw] w-auto"></img>
-      <div>
-          <p className="dm-sans-italic font-bold text-white">Mindanao Kokusai Daigaku</p>
-          <p className="boldonse-regular text-blue-100 text-[6vw]">OPEN FORUM </p>
-          <p className="boldonse-regular text-blue-100 text-[0.8vw]">An open space for MKD's students. </p>
+    <div className="flex ml-10 mb-10 mt-20 items-center justify-center">
+      <img src={GuidancePhoto} className="h-[20vw] mt-10 w-auto"></img>
+      <div className="">
+          <p className="dm-sans-italic font-bold text-[3vw] md:text-[1vw] text-white">Mindanao Kokusai Daigaku</p>
+          <p className="boldonse-regular text-blue-100 text-[4vw] md:text-[6vw]">OPEN FORUM </p>
+          <p className="boldonse-regular text-blue-100 text-[2vw] md:text-[0.8vw]">An open space for MKD's students. </p>
           
-          <p className="cedarville text-blue-200 text-[1.3vw]">Make sure to keep it safe, or else. 😉</p>
+          <p className="cedarville text-blue-200 text-[3vw] md:text-[1.3vw]">Make sure to keep it safe, or else. 😉</p>
       </div>
     </div>
     </>
