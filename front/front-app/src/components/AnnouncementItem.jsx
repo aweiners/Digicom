@@ -13,7 +13,7 @@ export default function AnnouncementItem({ announcement, isAdmin, onDelete }) {
   };
 
   return (
-    <div className="bg-white p-4 rounded-lg shadow border border-gray-200 hover:shadow-md transition-shadow">
+    <div className="bg-white hover:bg-gray-100 p-4 rounded-lg shadow border border-gray-200 hover:shadow-md transition-shadow">
       <div className="flex justify-between items-start">
         <h3 className="text-xl font-semibold text-blue-800">{announcement.title}</h3>
         {isAdmin && (

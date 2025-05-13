@@ -48,7 +48,7 @@ function BulletinBoard() {
 
   return (
     <div className="bg-white pb-10">
-      <nav className="border-gray-200 fixed w-full top-0 left-0 z-50 bg-white">
+      <nav className="border-gray-100 fixed w-full top-0 left-0 z-50 bg-white">
         <div className="flex flex-wrap items-center justify-between p-4">
           <a href="#" className="flex items-center space-x-3">
             <div className="ml-4 flex gap-3">
@@ -89,13 +89,13 @@ function BulletinBoard() {
             </ul>
           </div>
         </div>
-        <hr className="border-0.5"></hr>
+        <hr className="border-0.5 border-gray-100"></hr>
       </nav>
 
       {/* below navbar */}
       <div>
         <div 
-          className="mt-20 flex justify-center gap-5 shadow-2xl border-1"
+          className="mt-20 flex justify-center gap-5 shadow-2xl border-gray-100 border-1"
           style={{ backgroundImage: `url(${bulletin_bg})`, backgroundRepeat: 'no-repeat' }}
         >
           <div>
@@ -136,10 +136,10 @@ function BulletinBoard() {
 
       {/* Content sections */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        <div className="border-2 shadow-2xl border-gray-400 bg-no-repeat rounded-xl bg-white h-auto min-h-[50vw] p-10 m-10">
+        <div className="border-2 shadow-2xl border-gray-200 bg-no-repeat rounded-sm bg-white h-auto min-h-[50vw] p-10 m-10">
           <AnnouncementSection userRole={userRole} authToken={authToken} />
         </div>
-        <div className="border-2 shadow-2xl border-gray-400 rounded-xl bg-white h-auto min-h-[50vw] p-10 m-10">
+        <div className="border-2 shadow-2xl border-gray-200 rounded-sm bg-white h-auto min-h-[50vw] p-10 m-10">
           <ResourceSection userRole={userRole} authToken={authToken} />
         </div>
       </div>

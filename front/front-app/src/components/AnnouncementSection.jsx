@@ -88,7 +88,7 @@ export default function AnnouncementSection({ userRole, authToken }) {
   return (
     <div className="h-full flex flex-col">
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-2xl font-bold text-blue-900">Announcements</h2>
+        <h2 className="bungee-regular text-[2vw] font-bold text-blue-900">Announcements</h2>
         {userRole === "admin" && (
           <button 
             onClick={() => setShowAddForm(!showAddForm)}
