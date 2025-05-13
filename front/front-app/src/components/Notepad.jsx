@@ -41,12 +41,12 @@ export default function Notepad() {
     }
   };
 
-  // Login on component mount
+  // Login
   useEffect(() => {
     loginUser(username);
   }, []);
 
-  // Fetch notes when component mounts or when notes are modified
+  // Fetch notes
   useEffect(() => {
     const fetchNotes = async () => {
       try {
@@ -212,8 +212,10 @@ export default function Notepad() {
       )}
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-        <div className="bg-yellow-100 p-6 rounded-lg shadow-md flex flex-col min-h-[300px] w-full">
-          <h3 className="font-bold text-2xl truncate">📌 Forum Rules</h3>
+        <div className="bg-green-100 p-6 rounded-lg shadow-md flex flex-col min-h-[300px] w-full">
+          <h3 className="bungee-shade-regular text-red-900 font-bold text-2xl truncate">
+            📌 Forum Rules
+          </h3>
           <div className="flex-grow mt-4 overflow-y-auto">
             <div>
               <p className="bungee-regular">1. Be respectful</p>

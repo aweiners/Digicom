@@ -117,7 +117,7 @@ function BulletinBoard() {
       <div className="flex items-center justify-between mx-10 mt-6">
         <Link to="/forum">
           <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
-            <span className="flex text-blue-400 hover:text-white relative h-[3vw] w-auto boldonse-regular text-[1vw] text-center items-center px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-white rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
+            <span className="flex text-blue-400 hover:text-white relative h-[10vw] md:h-[3vw] w-auto boldonse-regular text-[2vw] md:text-[1vw] text-center items-center px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-white rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
               Open Forum
             </span>
           </button>
