@@ -21,7 +21,7 @@ export default function Notepad() {
   // Login user and get auth token
   const loginUser = async (user) => {
     try {
-      const response = await fetch("http://localhost:5000/api/users/login", {
+      const response = await fetch("http://localhost:3000/api/users/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -50,7 +50,7 @@ export default function Notepad() {
   useEffect(() => {
     const fetchNotes = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/notes");
+        const response = await fetch("http://localhost:3000/api/notes");
         const data = await response.json();
         setNotes(data);
       } catch (error) {
@@ -67,7 +67,7 @@ export default function Notepad() {
       const newNote = { id: noteId, title, content };
 
       try {
-        const response = await fetch("http://localhost:5000/api/notes", {
+        const response = await fetch("http://localhost:3000/api/notes", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -104,7 +104,7 @@ export default function Notepad() {
 
   const deleteNote = async (id) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/notes/${id}`, {
+      const response = await fetch(`http://localhost:3000/api/notes/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${authToken}`,

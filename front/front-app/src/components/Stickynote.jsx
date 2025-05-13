@@ -1,6 +1,6 @@
 export default function Stickynote({ note, onDelete, isAdmin }) {
   return (
-    <div className="bg-yellow-100 p-6 rounded-lg shadow-md flex flex-col min-h-[300px] w-full">
+    <div className="bg-yellow-100 text-justify p-6 rounded-lg shadow-md flex flex-col min-h-[300px] w-full">
       <h3 className="font-bold text-2xl truncate">{note.title || "Untitled"}</h3>
       <div className="flex-grow mt-4 overflow-y-auto">
         <p className="whitespace-pre-wrap break-words">{note.content}</p>

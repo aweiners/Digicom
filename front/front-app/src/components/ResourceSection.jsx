@@ -15,7 +15,7 @@ export default function ResourceSection({ userRole, authToken }) {
   const fetchResources = async () => {
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:5000/api/resources");
+      const response = await fetch("http://localhost:3000/api/resources");
       const data = await response.json();
       setResources(data);
       setError(null);
@@ -38,7 +38,7 @@ export default function ResourceSection({ userRole, authToken }) {
     if (!title.trim() || !description.trim()) return;
 
     try {
-      const response = await fetch("http://localhost:5000/api/resources", {
+      const response = await fetch("http://localhost:3000/api/resources", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -67,7 +67,7 @@ export default function ResourceSection({ userRole, authToken }) {
   // Delete resource
   const handleDeleteResource = async (id) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/resources/${id}`, {
+      const response = await fetch(`http://localhost:3000/api/resources/${id}`, {
         method: "DELETE",
         headers: {
           "Authorization": `Bearer ${authToken}`

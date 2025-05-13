@@ -14,7 +14,7 @@ export default function AnnouncementSection({ userRole, authToken }) {
   const fetchAnnouncements = async () => {
     try {
       setLoading(true);
-      const response = await fetch("http://localhost:5000/api/announcements");
+      const response = await fetch("http://localhost:3000/api/announcements");
       const data = await response.json();
       setAnnouncements(data);
       setError(null);
@@ -37,7 +37,7 @@ export default function AnnouncementSection({ userRole, authToken }) {
     if (!title.trim() || !content.trim()) return;
 
     try {
-      const response = await fetch("http://localhost:5000/api/announcements", {
+      const response = await fetch("http://localhost:3000/api/announcements", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -65,7 +65,7 @@ export default function AnnouncementSection({ userRole, authToken }) {
   // Delete announcement
   const handleDeleteAnnouncement = async (id) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/announcements/${id}`, {
+      const response = await fetch(`http://localhost:3000/api/announcements/${id}`, {
         method: "DELETE",
         headers: {
           "Authorization": `Bearer ${authToken}`
